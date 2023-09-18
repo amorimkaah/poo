@@ -1,0 +1,108 @@
+body{
+    background-color: #000000;
+    color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card{
+    width: 720px;
+
+    /* margin-left: 60px; */
+    margin-bottom: 20px; /* Margem inferior */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover{ /* Quando passar o mouse por cima do card */
+    transform: scale(1.05);
+    transition: 300ms ease-out;
+}
+
+.card:hover:not(.card:hover){
+    opacity: 0.5;
+}
+
+.cabecalho{
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: -6px;
+
+    box-shadow: 4px 16px 10px #10101066; /* Sombra */
+
+    background-color: #303030;
+
+    
+}
+
+.cabecalho .turma{
+    color: #75d063;
+
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.cabecalho .nome{
+    color: #eaeaea;
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+}
+
+.cabecalho .logo{
+    height: 140px;
+}
+
+.conteudo{
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 24px; /* espaço entre a borda e o conteúdo interno. */
+
+    z-index: 1;
+}
+
+.conteudo .foto{
+    width: 160px;
+    height: 200px;
+    
+    object-fit: cover;  /* O object-fit oferece opções para encaixar a imagem no retângulo. */
+    
+    border: solid 1px #000000;
+}
+
+.conteudo .info{
+    /* border: solid 1px #000000; */
+    width: 400px;
+}
+
+.info .label{
+    color: #2c8088;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+
+    
+    
+}
+
+.info .valor{
+    color: #1c4f53;
+    
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    font-size: 20px;
+    
+    
+    border-bottom: 1px solid #2c808855;
+    margin-top: 0;
+    padding: 4px;
+}

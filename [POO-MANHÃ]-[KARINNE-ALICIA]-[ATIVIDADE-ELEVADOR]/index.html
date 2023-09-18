@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Programação orientada a objetos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
+
+    <form action="#" id="cadastroAluno">
+        <div>
+            <label for="">Turma: </label><input id="iptTurma" type="text">
+        </div>
+
+        <div>
+            <label for="">Primeiro Nome: </label><input id="iptPrimeiroNome" type="text">
+        </div>
+
+        <div>
+            <label for="">Ultimo Nome: </label><input id="iptUltimoNome" type="text">
+        </div>
+
+        <div>
+            <label for="">Data De Nascimento: </label><input id="iptDataDeNascimento" type="date">
+        </div>
+
+        <div>
+            <label for="">Matrícula: </label><input id="iptMatricula" type="text">
+        </div>
+        <button id="btnCadastrar">Cadastrar</button>
+    </form>
+
+    <div id="containerDeCards">
+
+    </div>
+
+
     <script src="classes.js"></script>
     <script src="objetos.js"></script>
+    <script src="controlador.js"></script>
+    <script src="designer.js"></script>
 </body>
+
 </html>
